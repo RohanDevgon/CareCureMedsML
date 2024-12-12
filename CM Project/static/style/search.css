@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: radial-gradient(#f05bc3, #f08dec);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background: #fff;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 5px 5px 15px #111;
+}
+.logo
+{
+    color: #2b1055;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #2b1055;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active4
+{
+    background: #2b1055;
+    color: #fff;
+    transition: 0.5s;
+}
+form{
+    display: grid;
+    margin: 0 auto;
+    margin-top: 40%;
+    margin-bottom: 10%;
+}
+form #address{
+    color: #fff;
+    font-size: 25px;
+}
+form #adr{
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #2b1055;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    width: 165px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+form button:hover{
+    background: #2b1055;
+    color: #fff;
+    transition: 0.5s;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+form #symptoms{
+    color: #fff;
+}
+
+form #submit{
+    width: 75px;
+    margin-left: 42.5%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+form #submit:hover{
+    background: #2b1055;
+    color: #fff;
+    transition: 0.5s;
+    border-color: #fff;
+    cursor: pointer;
+}
+form select{
+    width: 200px;
+    margin-left: 30%;
+}
+form #radius{
+    color: #fff;
+    font-size: 25px;
+}
+form #rad{
+    width: 100px;
+    height: 30px;
+    margin-left: 40%;
+    border-radius: 10px;
+    border-color: #2b1055;
+    margin-bottom: 10px;
+}
+.output{
+    margin-top: 10%;
+}
