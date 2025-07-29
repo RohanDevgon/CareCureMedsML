@@ -1,23 +1,25 @@
-💊 CareCureMeds: Disease Prediction and Hospital Locator System
-CareCureMeds is a machine learning-powered web application that predicts diseases based on symptoms and locates nearby hospitals based on the predicted condition. It combines intelligent diagnosis, interactive visualizations, and map-based hospital ratings to assist users in health decision-making.
 
-🌟 Features
-✅ Symptom-based Disease Prediction
 
-📍 Map Visualization of Hospitals Based on Ratings
+# 💊 CareCureMedsML: Disease Prediction and Hospital Locator System
 
-📊 Heatmap for Hospital Ratings
+CareCureMedsML is a machine learning-powered web application that predicts diseases based on symptoms and locates nearby hospitals based on the predicted condition. It combines intelligent diagnosis, interactive visualizations, and map-based hospital ratings to assist users in health decision-making.
 
-🏥 Nearby Hospital Search (with distance filtering)
+---
 
-📈 Interactive Output Table of Ranked Hospitals
+## 🌟 Features
 
-🎨 User-friendly Web Interface using Flask
+* ✅ **Symptom-based Disease Prediction**
+* 📍 **Map Visualization of Hospitals Based on Ratings**
+* 📊 **Heatmap for Hospital Ratings**
+* 🏥 **Nearby Hospital Search (with distance filtering)**
+* 📈 **Interactive Output Table of Ranked Hospitals**
+* 🎨 **User-friendly Web Interface using Flask**
 
-🗂️ Project Structure
-bash
-Copy
-Edit
+---
+
+## 🗂️ Project Structure
+
+
 CM Project/
 ├── app.py                    # Main Flask app
 ├── Hospital.py               # Hospital location, rating & mapping logic
@@ -33,88 +35,99 @@ CM Project/
 │   ├── HeatMap.html
 │   ├── search.html
 │   └── output.html
-🧠 How it Works
-User inputs address, radius, and symptoms via the /search form.
+```
 
-model.py uses a pre-trained classifier (heart-disease-model.pkl) to predict a disease and its probability.
+---
 
-Hospital.py:
+## 🧠 How it Works
 
-Geocodes the user address
+1. **User inputs address, radius, and symptoms** via the `/search` form.
+2. `model.py` uses a pre-trained classifier (`heart-disease-model.pkl`) to predict a disease and its probability.
+3. `Hospital.py`:
 
-Filters hospitals within the given radius
+   * Geocodes the user address
+   * Filters hospitals within the given radius
+   * Visualizes results using **Plotly** and **Mapbox**
+4. Results are displayed in `output.html`, showing:
 
-Visualizes results using Plotly and Mapbox
+   * Predicted disease
+   * Table of nearby hospitals
+   * Embedded interactive map
 
-Results are displayed in output.html, showing:
+---
 
-Predicted disease
+## 🚀 Installation & Setup
 
-Table of nearby hospitals
+### 1. Clone the repository
 
-Embedded interactive map
 
-🚀 Installation & Setup
-1. Clone the repository
-bash
-Copy
-Edit
 git clone https://github.com/RohanDevgon/CareCureMedsML.git
 cd CareCureMedsML/CM\ Project
-2. Install dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install dependencies
+
+
 pip install -r requirements.txt
-If requirements.txt is not available, manually install:
+```
 
-bash
-Copy
-Edit
+If `requirements.txt` is not available, manually install:
+
+
 pip install flask pandas numpy plotly geopy requests joblib
-3. Run the Flask App
-bash
-Copy
-Edit
+```
+
+### 3. Run the Flask App
+
+
 python app.py
-Go to http://127.0.0.1:5000/ in your browser.
+```
+
+Go to `http://127.0.0.1:5000/` in your browser.
+
+---
 
 
-📌 Dataset Info
+## 📌 Dataset Info
+
 The project uses:
 
-Training1.csv & Testing1.csv: For disease prediction
+* `Training1.csv` & `Testing1.csv`: For disease prediction
+* `Hospital_data.csv`: Real US hospital ratings (CMS)
+* `Hospital_General_Information.csv`: For enrichment
 
-Hospital_data.csv: Real US hospital ratings (CMS)
+---
 
-Hospital_General_Information.csv: For enrichment
+## ⚙️ Technologies Used
 
-⚙️ Technologies Used
-Frontend: HTML, CSS (Flask + Jinja Templates)
+* **Frontend**: HTML, CSS (Flask + Jinja Templates)
+* **Backend**: Python, Flask
+* **ML**: scikit-learn (model loaded via `joblib`)
+* **Maps**: Plotly + Mapbox, OpenStreetMap, Geopy
+* **APIs**: Positionstack, Nominatim for geocoding
 
-Backend: Python, Flask
+---
 
-ML: scikit-learn (model loaded via joblib)
+## 🛠️ Future Improvements
 
-Maps: Plotly + Mapbox, OpenStreetMap, Geopy
+* 🧬 Expand disease prediction model to broader symptoms
+* 📄 Add PDF export of results
+* 🔒 Add authentication for user history
+* 📦 Deploy on Render/Heroku with live maps
 
-APIs: Positionstack, Nominatim for geocoding
+---
 
-🛠️ Future Improvements
-🧬 Expand disease prediction model to broader symptoms
+## ⚠️ Disclaimer
 
-📄 Add PDF export of results
+This tool is intended for **educational and informational purposes only**. It should **not** be used as a substitute for professional medical advice or diagnosis.
 
-🔒 Add authentication for user history
+---
 
-📦 Deploy on Render/Heroku with live maps
+## 🙌 Acknowledgments
 
-⚠️ Disclaimer
-This tool is intended for educational and informational purposes only. It should not be used as a substitute for professional medical advice or diagnosis.
+* Inspired by CMS hospital datasets
+* Map visualizations powered by Plotly + Mapbox
+* Geocoding via Nominatim & Positionstack API
 
-🙌 Acknowledgments
-Inspired by CMS hospital datasets
+---
 
-Map visualizations powered by Plotly + Mapbox
-
-Geocoding via Nominatim & Positionstack API
