@@ -79,16 +79,6 @@ Edit
 python app.py
 Go to http://127.0.0.1:5000/ in your browser.
 
-🔍 Example Screenshots
-Home Page with Rating Map
-
-Search Form with Symptoms
-
-Disease Prediction Output
-
-Nearby Hospital Heatmap
-
-(Screenshots in /static/screenshots/ if available)
 
 📌 Dataset Info
 The project uses:
