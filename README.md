@@ -1,5 +1,5 @@
-💊 CareCureMedsML: Disease Prediction and Hospital Locator System
-CareCureMedsML is a machine learning-powered web application that predicts diseases based on symptoms and locates nearby hospitals based on the predicted condition. It combines intelligent diagnosis, interactive visualizations, and map-based hospital ratings to assist users in health decision-making.
+💊 CareCureMeds: Disease Prediction and Hospital Locator System
+CareCureMeds is a machine learning-powered web application that predicts diseases based on symptoms and locates nearby hospitals based on the predicted condition. It combines intelligent diagnosis, interactive visualizations, and map-based hospital ratings to assist users in health decision-making.
 
 🌟 Features
 ✅ Symptom-based Disease Prediction
